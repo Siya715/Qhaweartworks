@@ -1,0 +1,332 @@
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*navbar*/
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background:rgb(255, 226, 158);
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.navbar h1 a{
+    display: inline-block;
+    font-family: "League Spartan";
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+
+.navbar h1 a:hover {
+    color: rgb(223, 130, 9);
+    transform: scale(1.1);
+}
+
+.nav-list{
+    display: block;
+    list-style: none;
+    gap: 10px;
+}
+
+.drop-btn button {
+    background-color: rgb(255, 226, 158);
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.drop-btn button:hover{
+     color: rgb(223, 130, 9);
+    transform: scale(1.1);
+}
+
+.dropdown {
+    display: none;
+}
+.navbar a {
+    display: inline-block;
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.navbar a:hover {
+     color: rgb(223, 130, 9);
+    transform: scale(1.1);
+}
+
+/* hero */
+
+.hero{
+    height: 80vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url("Asset/portfolio/WhatsApp\ Image\ 2026-04-30\ at\ 12.47.32\ \(1\).jpeg") ;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-family: "League Spartan";
+    font-weight: bold;
+    font-size: 5rem;
+    color: black;
+    margin-bottom: -9px;
+}
+
+.hero-content h2 {
+    font-family: 'quicksand';
+    letter-spacing: 10px;
+    margin-top: 0;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    font-size: 12px;
+    color: black;
+}
+
+.hero-content p {
+    color: rgb(241, 239, 239);
+}
+
+/* About */
+
+
+
+
+.about {
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 80px 40px;
+}
+
+.about h2{
+    font-family: "League Spartan";
+    font-size: 36px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+    margin-top: -80px;
+    color: rgb(223, 130, 9);
+    border-radius: 10px 10px 0 0;
+}
+
+.about-me p {
+    margin-bottom: 15px;
+    padding: 20px 50px 20px 50px ;
+}
+
+.about img {
+    width: 50%;
+    height: 50%;
+}
+
+/* portfolio */
+
+.featured-works {
+    padding: 80px 40px;
+    text-align: center;
+}
+
+.featured-works h2 {
+    color: rgb(223, 130, 9);
+    padding-bottom: 20px;
+}
+
+.featured-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.work-item img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Request */
+
+.request-container {
+    background-color: black;
+}
+
+.request{
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.request h1 {
+    padding: 20px;
+}
+
+.request p{
+    padding-bottom: 20px;
+}
+
+/* footer */
+
+footer {
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content:baseline ;
+    text-align: center;
+}
+
+/* contact */
+
+.section-title {
+    color: rgb(223, 130, 9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.contact p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.contact-form{
+    display: flex;
+    max-width: 500px;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    gap: 20px;
+}
+.contact-form button{
+    background-color: rgb(231, 184, 76);
+    border: none;
+    border-radius: 10px;
+    max-width: 100px;
+    margin: auto;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.3s auto;
+}
+
+.contact-form button:hover {
+    background-color: rgb(219, 127, 8);
+    color: rgb(241, 239, 239);
+    transform: scale(1.2);
+}
+
+.whatsapp-btn{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: green;
+    color: rgb(241, 239, 239);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.portfolio-page-hero{
+    padding:100px 20px;
+    text-align:center;
+}
+
+.category-section{
+    margin-bottom:40px;
+}
+
+.category-banner{
+    position:relative;
+    width:100%;
+    height:400px;
+    cursor:pointer;
+    overflow:hidden;
+}
+
+.category-banner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.category-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.5);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.category-overlay h2{
+    font-size:4rem;
+    color:white;
+}
+
+.category-content{
+    display:none;
+    padding:40px;
+}
+
+.lightbox{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.9);
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.lightbox img{
+    max-width:90%;
+    max-height:90%;
+    border-radius:10px;
+}

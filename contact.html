@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+        content="width=device-width,
+        initial-scale=1.0">
+        <title>QhaweArtWorks</title>
+        <link rel="icon" type="image/png" href="Asset/LOGO/Qhawe logo.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1 class="nav-logo"><a href="index.html">Qhawe.</a></h1>
+                </div>
+                <div class="drop-btn">
+                     <button href="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                       <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                       </svg></button>
+                </div>
+                <div class="dropdown">
+                <ul class="nav-list">
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+
+         <section class="contact" action="contact.php" method="POST">
+        <h1 class="section-title">Contact</h1>
+
+        <p class="contact-intro">
+            Intrested in a custom artwork? Send a message with
+            details about your idea.
+        </p>
+
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <input type="text" name="location" placeholder="location" required>
+
+            <textarea name="message" placeholder="Tell me about the artwork you want"></textarea>
+
+            <button type="submit" class="btn">Send message</button>
+
+        </form>
+
+        <p class="whatsapp-text">
+            or contact directly on whatsapp
+        </p>
+        <div class="whatsapp-text">
+        <a href="https:/wa.me/27665999959?text=Hi%20I%20would%20like%20a%20mural" target="_blank"
+        class="whatsapp-btn">Whatsapp</a>
+        </div>
+    </section>
+    </body>
+    <script src="script.js"></script>
+</html>

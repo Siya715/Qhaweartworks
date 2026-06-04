@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QhaweArtWorks</title>
+
+    <link rel="icon" type="image/png" href="Asset/LOGO/Qhawe logo.png">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!--NAVBAR-->
+        <header>
+            <nav class="navbar">
+                <div class="logo">
+                    <h1 class="nav-logo"><a href="index.html">Qhawe.</a></h1>
+                </div>
+                <div class="drop-btn">
+                     <button href="dropdown"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                       <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                       </svg></button>
+                </div>
+                <div class="dropdown">
+                <ul class="nav-list">
+                    <li><a href="Portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                </div>
+            </nav>
+        </header>
+
+<!-- HERO -->
+<section class="portfolio-page-hero">
+    <h1>Portfolio</h1>
+    <p>Explore our featured collections</p>
+</section>
+
+<!-- DICE ROLLERS -->
+<section class="category-section">
+
+    <div class="category-banner" onclick="toggleCategory('diceRollers')">
+        <img src="Asset/portfolio/WhatsApp Image 2026-04-30 at 12.47.30 (1).jpeg">
+        <div class="category-overlay">
+            <h2>Dice Rollers</h2>
+        </div>
+    </div>
+
+    <div id="diceRollers" class="category-content">
+
+        <div class="featured-grid">
+
+            <div class="work-item">
+                <img src="Asset/portfolio/mother type 1.jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="work-item">
+                <img src="Asset/portfolio/WhatsApp Image 2026-04-30 at 12.47.30 (1).jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="work-item">
+                <img src="Asset/portfolio/dinner.jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="work-item">
+                <img src="Asset/portfolio/WhatsApp Image 2026-04-30 at 12.47.30.jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="work-item">
+                <img src="Asset/portfolio/WhatsApp Image 2026-04-30 at 12.47.31 (1).jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="work-item">
+                <img src="Asset/portfolio/next move.jpeg" onclick="openLightbox(this)">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MOTHER LAND -->
+<section class="category-section">
+
+    <div class="category-banner" onclick="toggleCategory('motherLand')">
+        <img src="Asset/portfolio/WhatsApp Image 2026-04-30 at 12.47.32.jpeg">
+        <div class="category-overlay">
+            <h2>Mother Land</h2>
+        </div>
+    </div>
+
+    <div id="motherLand" class="category-content">
+
+        <div class="featured-grid">
+
+            <div class="work-item">
+                <img src="Asset/portfolio/WhatsApp Image 2026-04-30 at 12.47.17.jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="work-item">
+                <img src="Asset/portfolio/WhatsApp Image 2026-04-30 at 12.47.25.jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="work-item">
+                <img src="Asset/portfolio/WhatsApp Image 2026-04-30 at 12.47.26.jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="work-item">
+                <img src="Asset/portfolio/WhatsApp Image 2026-04-30 at 12.47.29.jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="work-item">
+                <img src="Asset/portfolio/WhatsApp Image 2026-04-30 at 12.47.33.jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="work-item">
+                <img src="Asset/portfolio/WhatsApp Image 2026-04-30 at 12.47.39.jpeg" onclick="openLightbox(this)">
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img">
+</div>
+
+<!-- SCRIPT -->
+<script>
+
+function toggleCategory(id){
+    const section = document.getElementById(id);
+
+    if(section.style.display === "block"){
+        section.style.display = "none";
+    } else {
+        section.style.display = "block";
+    }
+}
+
+/* LIGHTBOX */
+function openLightbox(img){
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+
+    lightbox.style.display = "flex";
+    lightboxImg.src = img.src;
+}
+
+function closeLightbox(){
+    document.getElementById("lightbox").style.display = "none";
+}
+
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
